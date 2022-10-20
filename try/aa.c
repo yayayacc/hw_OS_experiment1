@@ -10,9 +10,15 @@ int main()
         return 1;
     }
     else if ( pid == 0){
-        pid = getpid();
+        pid1 = getpid();
         printf("child: pid = %d",pid);
         printf("child: pid1 = %d",pid);
-        
     }
+    else{
+        pid1 = getpid();
+        printf("parent: pid = %d",pid);
+        printf("parent: pid1 = %d",pid1);
+        wait(NULL);
+    }
+    return 0;
 }
