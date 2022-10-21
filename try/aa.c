@@ -1,7 +1,7 @@
 #include<sys/types.h>
 #include<stdio.h>
 #include<unistd.h>
-
+#include <wait.h>
 int main()
 {
     pid_t pid,pid1;
@@ -13,7 +13,7 @@ int main()
     else if ( pid == 0){
         pid1 = getpid();
         printf("child: pid = %d",pid);
-        printf("child: pid1 = %d",pid);
+        printf("child: pid1 = %d",pid1);
     }
     else{
         pid1 = getpid();
