@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<unistd.h>
 #include <wait.h>
-
+#include<stdlib.h>
 int my_int = 1;
 
 int main()
